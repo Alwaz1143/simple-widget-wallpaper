@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cool-widget-wallpaper</title>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="settings.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="digital-clock">
+        <div class="time">
+          <span class="hours">08</span>
+          <span class="dots">:</span>
+          <span class="minutes">30</span>
+          <div class="right-side">
+            <span class="period">PM</span>
+            <span class="seconds">20</span>
+          </div>
+        </div>
+        <div class="clock-date">
+          <span class="day-name">Sunday</span>
+          <span class="day-number">6</span>
+          <span class="month-name">Mar</span>
+          <span class="year">2025</span>
+        </div>
+      </div>
+
+      <div class="quotes">
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+
+      <div class="right-panel">
+        <div class="calendar">
+          <div class="header">
+            <button id="prevBtn">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <div class="monthYear" id="monthYear"></div>
+
+            <button id="nextBtn">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+
+          <div class="days">
+            <div class="day">Mon</div>
+            <div class="day">Tue</div>
+            <div class="day">Wed</div>
+            <div class="day">Thu</div>
+            <div class="day">Fri</div>
+            <div class="day">Sat</div>
+            <div class="day">Sun</div>
+          </div>
+          <div id="dates" class="dates"></div>
+        </div>
+
+        <div class="weather-container">
+          <img src="" alt="Weather Icon" id="weather-icon" />
+          <div id="temp-div"></div>
+          <div id="weather-info"></div>
+          <div id="hourly-forecast"></div>
+        </div>
+      </div>
+
+      <div class="settings">
+        <i class="fa-solid fa-gear gear-icon"></i>
+        <div class="settings-popup">
+          <div class="popup-item">
+            <span>Dark Mode</span>
+            <label class="switch">
+              <input type="checkbox" checked aria-label="Toggle Dark Mode" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="popup-item">
+            <span>Calendar</span>
+            <label class="switch">
+              <input type="checkbox" aria-label="Toggle Calendar" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="popup-item">
+            <span>Weather</span>
+            <label class="switch">
+              <input type="checkbox" aria-label="Toggle Weather" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="background-img-settings">
+              <input type="url" aria-label="Toggle Weather" id="bg-url-input" placeholder="Enter URL"/>
+              <button id="change-background">Change Background</button>
+              <input type="file" name="image" id="bg-file-input" style="display: none;">
+              <label for="bg-file-input" class="bg-file-btn">Upload Image</label>
+              <button id="default-background">Default Background</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module"src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+.quotes{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    bottom: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+}
+
+.quote i{
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.quote{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.author{
+    font-weight: 400;
+    font-size: 1rem;
+}

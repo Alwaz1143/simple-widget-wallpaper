@@ -1,0 +1,27 @@
+{
+  "backgroundImage": {
+    "text": "Background Image URL",
+    "type": "text",
+    "value": ""
+  },
+  "darkMode": {
+    "text": "Enable Dark Mode",
+    "type": "checkbox",
+    "value": true
+  },
+  "showCalendar": {
+    "text": "Show Calendar",
+    "type": "checkbox",
+    "value": true
+  },
+  "showWeather": {
+    "text": "Show Weather",
+    "type": "checkbox",
+    "value": true
+  },
+  "showQuotes": {
+    "text": "Show Quotes",
+    "type": "checkbox",
+    "value": true
+  }
+}
